@@ -1,15 +1,131 @@
 @import "tailwindcss";
 
+/* Smooth transition for both themes */
+.light-tgl::after,
+.dark-tgl::after {
+  transition: all 0.3s ease;
+}
+
+/* Wrapper fix for toggle container */
+.theme-toggle-wrapper {
+  position: relative;
+  left: 6.7vw;
+  top: 16.1vw;
+}
+
+/* ########################### DARK THEME ########################### */
+
+.dark-inner-boxshadow {
+  box-shadow: inset 6px 6px 12px #000000, inset -6px -6px 12px #3B3B3B;
+  background-color: #292D32;
+}
+
+.dark-drop-boxshadow {
+  box-shadow: 6px 6px 12px #000000, -6px -6px 12px #3B3B3B;
+  background-color: #292D32;
+}
+
+.dark-tgl {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative; /* ✅ fix */
+  cursor: pointer;
+  box-shadow: inset 6px 6px 12px #000000, inset -6px -6px 12px #3B3B3B;
+  background-color: #292D32;
+  width: 2.6vw;
+  height: 1.3vw;
+  border-radius: 9999px;
+  padding: 0.2vw;
+  z-index: 1;
+}
+
+.dark-tgl::after {
+  content: "";
+  box-shadow: 6px 6px 12px #000000, -6px -6px 12px #3B3B3B;
+  z-index: 1;
+  background-color: #292d32;
+  border-radius: 100%;
+  width: 1vw;
+  height: 1vw;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+
+/* ########################### LIGHT THEME ########################### */
+
+.light-inner-boxshadow {
+  box-shadow: inset 6px 6px 12px #BEBEBE, inset -6px -6px 12px #FFFFFF;
+  background-color: #E0E0E0;
+}
+
+.light-drop-boxshadow {
+  box-shadow: 6px 6px 12px #BEBEBE, -6px -6px 12px #FFFFFF;
+  background-color: #E0E0E0;
+}
+
+.light-tgl {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #E0E0E0;
+  position: relative; /* ✅ fix */
+  cursor: pointer;
+  width: 2.6vw;
+  height: 1.3vw;
+  border-radius: 9999px;
+  padding: 0.2vw;
+  z-index: 1;
+}
+
+.light-tgl::after {
+  content: '';
+  box-shadow: 6px 6px 12px #BEBEBE, -6px -6px 12px #FFFFFF;
+  z-index: 1;
+  background-color: #E0E0E0;
+  border-radius: 100%;
+  width: 1vw;
+  height: 1vw;
+  position: absolute;
+  top: 10%;
+  left: 55%;
+}
+
+
+/* ################################################################################### */
+/* ######################################### Active ################################## */
+/* ################################################################################### */
+
+/* Smooth dot transition */
+.active-tab-dot::before {
+  content: '';
+  position: absolute;
+  left: 1vw;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0.6vw;
+  height: 0.6vw;
+  border-radius: 50%;
+  background-color: #00ff7f; /* Light green */
+  transition: all 0.3s ease;
+}
+
+
+nav a:last-child{
+  margin-top: 5vw!important;
+}
+
+/* Add optional hover dot animation (optional) */
+a:hover::before {
+  opacity: 0.8;
+}
+
+
+/* Root colors */
 :root {
   --background: #ffffff;
   --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
