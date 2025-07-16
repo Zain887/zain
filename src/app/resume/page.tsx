@@ -62,7 +62,7 @@ export default function Resume() {
               <p>Assistant Manager – HushPuppies (2015–2016) Led store operations and team management to improve sales and customer satisfaction.</p>
               <p>Sales Executive – Alixeeshan Studio (2012–2013) Delivered excellent customer service and handled retail sales.</p>
               <h1>Certifications</h1>
-              <ul>
+              <ul className='text-center'>
                 <li>Cloud Computing</li>
                 <li>Network Security</li>
                 <li>Cybersecurity</li>
