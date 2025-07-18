@@ -16,6 +16,8 @@ export default function About() {
       ? 'dark-drop-boxshadow bg-[#292D32]'
       : 'light-drop-boxshadow bg-[#E0E0E0]'
 
+  const easeCurve = [0.25, 0.1, 0.25, 1] as const // ✅ safe easing
+
   const services = [
     {
       title: 'UI/UX Design',
@@ -41,7 +43,7 @@ export default function About() {
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7, ease: 'easeOut' }}
+        transition={{ duration: 0.7, ease: easeCurve }} // ✅ easing fixed
         className={`w-[68.8vw] h-[26.4vw] rounded-[1vw] transition-all duration-500 p-[1.5vw] ${mainBoxStyle}`}
       >
         <h3 className="uppercase text-[1.8vw]">Hi, my name is</h3>
@@ -72,7 +74,7 @@ export default function About() {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             whileHover={{ scale: 1.05 }}
-            transition={{ duration: 0.5, delay: idx * 0.1 }}
+            transition={{ duration: 0.5, delay: idx * 0.1, ease: easeCurve }} // ✅ safe easing here too
             viewport={{ once: true }}
             className={`w-full md:w-[15.7vw] h-[30vw] md:h-[15.7vw] rounded-[1vw] p-[1vw] cursor-pointer flex flex-col justify-center items-center text-center transition-all duration-500 ${serviceBoxStyle}`}
           >

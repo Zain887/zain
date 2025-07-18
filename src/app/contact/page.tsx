@@ -4,7 +4,7 @@ import { useTheme } from '../context/ThemeContext'
 import { FaPhoneAlt, FaWhatsapp, FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa'
 import { motion } from 'framer-motion'
 
-export default function AboutPage() {
+export default function Contact() {
   const { theme } = useTheme()
 
   const containerStyle =
@@ -18,7 +18,7 @@ export default function AboutPage() {
     {
       icon: <FaPhoneAlt />,
       label: 'Call',
-      link: 'tel:+1234567890',
+      link: 'tel:+923302376222',
     },
     {
       icon: <FaWhatsapp />,
@@ -42,12 +42,14 @@ export default function AboutPage() {
     },
   ]
 
+  const easeCurve = [0.25, 0.1, 0.25, 1] as const
+
   return (
     <>
       <motion.h1
         initial={{ opacity: 0, y: -30 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
+        transition={{ duration: 0.6, ease: easeCurve }}
         className={`mb-[1.5vw] mx-auto text-[1.8vw] font-bold px-[5.5vw] w-fit rounded-[1.5vw] transition-all duration-500 ${containerStyle}`}
       >
         Let&rsquo;s Work Together
@@ -56,7 +58,7 @@ export default function AboutPage() {
       <motion.p
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7, delay: 0.2 }}
+        transition={{ duration: 0.7, delay: 0.2, ease: easeCurve }}
         className='text-[1.2vw] leading-[2.5vw] w-[55vw] uppercase mx-auto mb-[4.3vw] text-center'
       >
         I craft digital solutions that redefine brands and elevate online experiences.
@@ -67,7 +69,7 @@ export default function AboutPage() {
       <motion.div
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.6, delay: 0.3 }}
+        transition={{ duration: 0.6, delay: 0.3, ease: easeCurve }}
         className={`${containerStyle} p-[1vw] w-[32.9vw] h-[25.7vw] rounded-2xl mx-auto flex flex-col justify-center items-center`}
       >
         <h1 className='text-[1.5vw] font-semibold mb-[1vw]'>Get in Touch</h1>
@@ -79,6 +81,7 @@ export default function AboutPage() {
               href={link}
               target='_blank'
               rel='noopener noreferrer'
+              aria-label={label}
               className={`group flex flex-col items-center justify-center ${iconColor} text-[2vw] hover:scale-110 transition-all duration-300`}
               whileHover={{ y: -5 }}
             >
