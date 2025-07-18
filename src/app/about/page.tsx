@@ -1,6 +1,7 @@
 'use client'
 
 import { useTheme } from '../context/ThemeContext'
+import { motion } from 'framer-motion'
 
 export default function About() {
   const { theme } = useTheme()
@@ -22,7 +23,7 @@ export default function About() {
     },
     {
       title: 'Web Development',
-      desc: ' I build responsive, fast, and interactive websites using modern frameworks with a strong focus on performance and user experience.',
+      desc: 'I build responsive, fast, and interactive websites using modern frameworks with a strong focus on performance and user experience.',
     },
     {
       title: 'Web Animation',
@@ -37,7 +38,10 @@ export default function About() {
   return (
     <section className="text-2xl absolute left-[5.9vw] top-[1.5vw]">
       {/* About Box */}
-      <div
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7, ease: 'easeOut' }}
         className={`w-[68.8vw] h-[26.4vw] rounded-[1vw] transition-all duration-500 p-[1.5vw] ${mainBoxStyle}`}
       >
         <h3 className="uppercase text-[1.8vw]">Hi, my name is</h3>
@@ -55,7 +59,7 @@ export default function About() {
           front-end engineer, I combine creative design with modern development frameworks to
           deliver fast, secure, and visually compelling digital experiences.
         </p>
-      </div>
+      </motion.div>
 
       {/* Services Heading */}
       <h2 className="font-bold text-[1.8vw] text-center my-[1.5vw]">My Services</h2>
@@ -63,13 +67,18 @@ export default function About() {
       {/* Service Boxes */}
       <div className="flex flex-wrap md:flex-nowrap items-center justify-between w-[68.8vw] gap-4">
         {services.map((service, idx) => (
-          <div
+          <motion.div
             key={idx}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            whileHover={{ scale: 1.05 }}
+            transition={{ duration: 0.5, delay: idx * 0.1 }}
+            viewport={{ once: true }}
             className={`w-full md:w-[15.7vw] h-[30vw] md:h-[15.7vw] rounded-[1vw] p-[1vw] cursor-pointer flex flex-col justify-center items-center text-center transition-all duration-500 ${serviceBoxStyle}`}
           >
             <h3 className="text-[1.2vw] font-semibold mb-[2vw]">{service.title}</h3>
             <p className="text-[1vw] font-light">{service.desc}</p>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>

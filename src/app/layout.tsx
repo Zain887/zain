@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={`${jura.className} w-[100vw] h-[100vh] overflow-hidden`} cz-shortcut-listen="true">
+      <body className={`${jura.className} w-[100vw] h-[100vh] overflow-x-hidden overflow-y-auto`} cz-shortcut-listen="true">
         <ThemeProvider>
           <div className="flex min-h-screen bg-background-dark text-text-dark dark:bg-background-dark dark:text-text-dark">
             <Sidebar />

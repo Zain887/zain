@@ -98,18 +98,33 @@
 /* ################################################################################### */
 
 /* Smooth dot transition */
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+    box-shadow: 0 0 0.2vw #00ff7f, 0 0 0.6vw #00ff7f;
+  }
+  50% {
+    opacity: 0.4;
+    box-shadow: 0 0 0.4vw #00ff7f, 0 0 1vw #00ff7f;
+  }
+}
+
 .active-tab-dot::before {
   content: '';
   position: absolute;
   left: 1vw;
   top: 50%;
   transform: translateY(-50%);
-  width: 0.6vw;
-  height: 0.6vw;
+  width: 0.65vw;
+  height: 0.65vw;
   border-radius: 50%;
-  background-color: #00ff7f; /* Light green */
+  background-color: #00ff7f;
+  border: 0.15vw solid #1aff95;
+  box-shadow: 0 0 0.5vw #00ff7f;
+  animation: blink 1s infinite ease-in-out;
   transition: all 0.3s ease;
 }
+
 
 
 nav a:last-child{
