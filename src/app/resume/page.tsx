@@ -46,7 +46,7 @@ export default function Resume() {
           Technical Experience
         </motion.h1>
 
-        <div className='flex flex-col lg:flex-row items-center justify-between gap-[1.5vw]'>
+        <div className='flex flex-col lg:flex-row items-center gap-[1.5vw]'>
           {[...Array(2)].map((_, i) => (
             <motion.div
               key={i}
@@ -68,7 +68,7 @@ export default function Resume() {
           ))}
         </div>
 
-        <div className='mt-6 lg:mt-[1.5vw] flex flex-col lg:flex-row items-center justify-between gap-[1.5vw]'>
+        <div className='mt-6 lg:mt-[1.5vw] flex flex-col lg:flex-row items-center gap-[1.5vw]'>
           {[...Array(2)].map((_, i) => (
             <motion.div
               key={i}
