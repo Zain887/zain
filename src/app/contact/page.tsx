@@ -50,7 +50,7 @@ export default function AboutPage() {
         transition={{ duration: 0.6 }}
         className={`mb-[1.5vw] mx-auto text-[1.8vw] font-bold px-[5.5vw] w-fit rounded-[1.5vw] transition-all duration-500 ${containerStyle}`}
       >
-        Let’s Work Together
+        Let&rsquo;s Work Together
       </motion.h1>
 
       <motion.p
@@ -60,8 +60,8 @@ export default function AboutPage() {
         className='text-[1.2vw] leading-[2.5vw] w-[55vw] uppercase mx-auto mb-[4.3vw] text-center'
       >
         I craft digital solutions that redefine brands and elevate online experiences.
-        Whether you're looking to start a new project, collaborate, or just say hello —
-        I'm just a message away.
+        Whether you&rsquo;re looking to start a new project, collaborate, or just say hello —
+        I&rsquo;m just a message away.
       </motion.p>
 
       <motion.div
