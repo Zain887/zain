@@ -17,14 +17,13 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <body className={`${jura.className} w-[100vw] h-[100vh] overflow-x-hidden overflow-y-auto`} cz-shortcut-listen="true">
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${jura.className} w-full min-h-screen overflow-x-hidden`}  cz-shortcut-listen="true">
         <ThemeProvider>
-          <div className="flex min-h-screen bg-background-dark text-text-dark dark:bg-background-dark dark:text-text-dark">
+          {/* Layout: Sidebar + Main Content */}
+          <div className="flex flex-col md:flex-row min-h-screen transition-colors duration-300">
             <Sidebar />
-            <Contentarea>
-              {children}
-            </Contentarea>
+            <Contentarea>{children}</Contentarea>
           </div>
         </ThemeProvider>
       </body>

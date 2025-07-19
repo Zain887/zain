@@ -3,6 +3,7 @@
 import React, {
   createContext,
   useContext,
+  useEffect,
   useState,
   ReactNode,
 } from 'react'
@@ -18,14 +19,28 @@ const ThemeContext = createContext<ThemeContextType | undefined>(undefined)
 
 export const ThemeProvider = ({ children }: { children: ReactNode }) => {
   const [theme, setTheme] = useState<Theme>('dark')
+  const [mounted, setMounted] = useState(false)
+
+  // Ensure this only runs on client
+  useEffect(() => {
+    const savedTheme = localStorage.getItem('theme') as Theme | null
+    if (savedTheme) {
+      setTheme(savedTheme)
+    }
+    setMounted(true)
+  }, [])
 
   const toggleTheme = () => {
-    setTheme((prev) => (prev === 'dark' ? 'light' : 'dark'))
+    const newTheme = theme === 'dark' ? 'light' : 'dark'
+    setTheme(newTheme)
+    localStorage.setItem('theme', newTheme)
   }
+
+  // Prevent hydration mismatch
+  if (!mounted) return null
 
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
-      {/* Optional: apply theme class to root */}
       <div className={theme}>{children}</div>
     </ThemeContext.Provider>
   )
