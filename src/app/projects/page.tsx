@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 type Project = {
   title: string
@@ -87,7 +88,7 @@ export default function Projects() {
           Check out my latest work
         </h2>
         <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed max-w-2xl mx-auto">
-          I've worked on a variety of projects, from simple websites to complex web
+          I&apos;ve worked on a variety of projects, from simple websites to complex web
           applications. Here are a few of my favorites.
         </p>
       </div>
@@ -102,11 +103,17 @@ export default function Projects() {
             transition={{ duration: 0.25 }}
             className="rounded-lg bg-card text-card-foreground flex flex-col overflow-hidden border hover:shadow-lg transition-all duration-300 ease-out h-full"
           >
-            <a target="_blank" href={project.projectUrl} className="block cursor-pointer">
-              <img
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href={project.projectUrl}
+              className="block cursor-pointer relative h-40 w-full"
+            >
+              <Image
                 alt={project.title}
                 src={project.imageUrl}
-                className="h-40 w-full object-cover object-top"
+                fill
+                className="object-cover object-top"
               />
             </a>
 
@@ -129,7 +136,7 @@ export default function Projects() {
             </div>
 
             <div className="flex items-center pt-2 px-2 pb-2">
-              <a target="_blank" href={project.sourceUrl}>
+              <a target="_blank" rel="noopener noreferrer" href={project.sourceUrl}>
                 <div className="items-center rounded-md border font-semibold transition-colors border-transparent bg-primary text-primary-foreground shadow hover:bg-primary/80 flex gap-2 px-2 py-1 text-[10px]">
                   <svg
                     viewBox="0 0 438.549 438.549"
