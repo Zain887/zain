@@ -5,7 +5,7 @@ export const workExperience: Experience[] = [
         company: 'Zee Matrix LLC',
         role: 'Full Stack Developer',
         period: 'June 2024 - August 2024',
-        logo: '/work/zeematrix-logo.jpeg',
+        logo: '/images/logoPlaceholder.png',
         link: 'https://zee-matrix.com',
         details: [
             'CRM development with Mollak API integration for document submission',
@@ -18,7 +18,7 @@ export const workExperience: Experience[] = [
         company: 'Aylab',
         role: 'Full Stack Engineer',
         period: 'March 2024 - April 2024',
-        logo: '/work/aylab-logo.jpeg',
+        logo: '/images/logoPlaceholder.png',
         link: 'https://aylab.io',
         details: [
             'Cross-chain app development using Wormhole',
@@ -31,7 +31,7 @@ export const workExperience: Experience[] = [
         company: 'FusionTech',
         role: 'Full Stack Developer',
         period: 'Jan 2024 - March 2024',
-        logo: '/work/fusiontech-logo.jpeg',
+        logo: '/images/logoPlaceholder.png',
         link: '#',
         details: [
             'Stripe payment gateway integration',
@@ -44,7 +44,7 @@ export const workExperience: Experience[] = [
         company: 'OpusAI',
         role: 'Software Engineer',
         period: 'Oct 2022 - Jan 2024',
-        logo: '/work/opus-logo.jpeg',
+        logo: '/images/logoPlaceholder.png',
         link: 'https://opus.ai',
         details: [
             'ERC721, ERC721A & ERC20 smart contracts',
@@ -59,7 +59,7 @@ export const workExperience: Experience[] = [
         company: 'Assetize SARL',
         role: 'Full Stack Developer',
         period: 'Apr 2023 - Oct 2023',
-        logo: '/work/assetize-logo.jpeg',
+        logo: '/images/logoPlaceholder.png',
         link: 'https://assetize.today',
         details: [
             'Fintech frontend & backend development',
@@ -73,7 +73,7 @@ export const workExperience: Experience[] = [
         company: 'B2B Systems',
         role: 'Junior Software Engineer',
         period: 'June 2020 - Aug 2022',
-        logo: '/work/b2bsystems-logo.jpeg',
+        logo: '/images/logoPlaceholder.png',
         link: '#',
         details: [
             'Bug fixes and feature development',
@@ -90,7 +90,7 @@ export const educationData: Education[] = [
     institute: 'Virtual University of Pakistan',
     degree: 'BS Software Engineering',
     period: '2016 - 2020',
-    logo: '/education/vu-logo.png',
+    logo: '/images/logoPlaceholder.png',
     link: 'https://vu.edu.pk',
   },
 ]

@@ -5,6 +5,9 @@ import About from './about/page'
 import Resume from './resume/page'
 import Education from './education/page'
 import Skills from './skills/page'
+import Projects from './projects/page'
+import Certifications from './certifications/page'
+import Contact from './contact/page'
 
 export default function Home() {
 
@@ -16,6 +19,9 @@ export default function Home() {
       <Resume/>
       <Education/>
       <Skills/>
+      <Projects/>
+      <Certifications/>
+      <Contact/>
     </>
   )
 }
