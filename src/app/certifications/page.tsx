@@ -9,7 +9,7 @@ const certifications = [
       "Topics Covered: Project Creation, JSX Templating, Attributes, Styles, Expressions, Events, CDN Integration, Functional & Class Components, Props, Nesting, Reusability, and State Management.",
     imgSrc: "/images/logoPlaceholder.png",
     alt: "The React Crash Course",
-    link: "https://www.pirple.com/certificates/42afmhwtkt",
+    link: "#",
     type: "Certificate",
   },
   {
@@ -18,7 +18,7 @@ const certifications = [
     description: "Getting Started with OAuth 2.0 implementation.",
     imgSrc: "/images/logoPlaceholder.png",
     alt: "OAuth 2.0",
-    link: "https://app.pluralsight.com/achievements/share/7a0e39fb-2ab8-4eb0-bfbe-a98d2e6ffb40",
+    link: "#",
     type: "Certificate",
   },
   {
@@ -28,7 +28,7 @@ const certifications = [
       "Topics Covered: Provisioning, SSH, Putty, the FileSystem, Permissions, Nano, Vim, Package Management with Yum, LAMP Stack configuration, Git integration, Database operations, DNS, Virtual Hosts, Firewalls, Snapshots, Logging, and more.",
     imgSrc: "/images/logoPlaceholder.png",
     alt: "Intro to Server Administration",
-    link: "https://www.pirple.com/certificates/lu9yazcprk",
+    link: "#",
     type: "Certificate",
   },
   {
@@ -37,7 +37,7 @@ const certifications = [
     description: "It covers Functions, Currying, Hoisting, Scope, Inheritance, Events, and Error Handling.",
     imgSrc: "/images/logoPlaceholder.png",
     alt: "Javascript",
-    link: "https://www.hackerrank.com/certificates/cceb221e7cd7",
+    link: "#",
     type: "Certificate",
   },
   {
@@ -46,7 +46,7 @@ const certifications = [
     description: "It includes complex joins, unions, and sub-queries.",
     imgSrc: "/images/logoPlaceholder.png",
     alt: "SQL",
-    link: "https://www.hackerrank.com/certificates/110027bf6ae6",
+    link: "#",
     type: "Certificate",
   },
   {
@@ -55,7 +55,7 @@ const certifications = [
     description: "Describe Core Solutions On OCI. Discuss Core OCI Services And Cloud Native Services.",
     imgSrc: "/images/logoPlaceholder.png",
     alt: "OCI Foundations",
-    link: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=8158AD3B67E2881261287861E1945B51BBDA75734FFA00AF40920F500B6919D9",
+    link: "#",
     type: "Certificate",
   },
   {
@@ -64,7 +64,7 @@ const certifications = [
     description: "Serverless Firebase Development",
     imgSrc: "/images/logoPlaceholder.png",
     alt: "Serverless Firebase",
-    link: "https://www.skills.google/public_profiles/5a01c696-1e75-49db-a9ce-391c18d2399f/badges/1005039",
+    link: "#",
     type: "Badge",
   },
   {
@@ -73,7 +73,7 @@ const certifications = [
     description: "Serverless Cloud Run Development",
     imgSrc: "/images/logoPlaceholder.png",
     alt: "Serverless Cloud Run",
-    link: "https://www.skills.google/public_profiles/5a01c696-1e75-49db-a9ce-391c18d2399f/badges/1001017",
+    link: "#",
     type: "Badge",
   },
   // Add more certifications here as needed

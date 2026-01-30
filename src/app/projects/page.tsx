@@ -17,7 +17,7 @@ const projects: Project[] = [
     title: 'Opus AI',
     description:
       'Developed public facing website for OpusAI and integrated platform to purchase the products from OpusAI with Stripe and MetaMask (Crypto).',
-    imageUrl: '/images/placeholderimage.png',
+    imageUrl: '/images/opus-ai.webp',
     projectUrl: 'https://opus.ai',
     sourceUrl: 'https://opus.ai',
     tags: ['Svelte.js', 'Firebase Functions', 'GASP', 'MetaMask', 'Stripe'],
@@ -26,7 +26,7 @@ const projects: Project[] = [
     title: 'Oxlabs Website',
     description:
       'Built public facing website with Next.js using Framer Motion and GASP. Configured Cloudflare workers for contact forms and email/Discord notifications.',
-    imageUrl: '/images/placeholderimage.png',
+    imageUrl: '/images/oxlabs.webp',
     projectUrl: 'https://oxlabs.us',
     sourceUrl: 'https://oxlabs.us',
     tags: [
@@ -40,40 +40,40 @@ const projects: Project[] = [
     ],
   },
   {
-    title: 'Zee Matrix CRM',
+    title: 'Assetize',
     description:
-      'Developed a comprehensive CRM platform for ZeeMatrix with advanced features and integration with Mollak to generate property reports and submit documents.',
-    imageUrl: '/images/placeholderimage.png',
-    projectUrl: 'https://zee-matrix.com',
-    sourceUrl: 'https://zee-matrix.com',
+      'I have been a founder, exited and later became an investor. As a founder, I am familiar with the hardship of constant need for capital. As an investor, I could not find passive income investments with decent yield. Thus, I decided to solve both problems in one with Assetize.',
+    imageUrl: '/images/assetize.png',
+    projectUrl: 'https://www.assetize.today/',
+    sourceUrl: 'https://www.assetize.today/',
     tags: ['Next.js', 'Nest.js', 'Typescript', 'Bootstrap', 'Mollak API', 'Webhooks'],
   },
   {
-    title: 'Creds Vault (secrets-cli)',
+    title: 'Parsec Institute',
     description:
       'A secure command-line utility for sharing .env files across development teams using GitHub Gists with client-side AES-256 encryption.',
-    imageUrl: '/images/placeholderimage.png',
-    projectUrl: 'https://pypi.org/project/creds-vault/',
-    sourceUrl: 'https://github.com/mirzamudassir/secrets-cli',
-    tags: ['Python', 'GitHub Gists', 'CLI'],
+    imageUrl: '/images/parsec.png',
+    projectUrl: 'https://parsecinstitute.org/',
+    sourceUrl: 'https://parsecinstitute.org/',
+    tags: ['Svelte', 'Gsap', 'GitHub Gists', 'CLI'],
   },
   {
-    title: 'Crypto Price Tracker',
+    title: 'PredatorCut',
     description:
-      'Cryptocurrency Price Tracker with real-time price updates on Ethereum and Polygon for USD. Implemented with NestJs using CoinMarketCap and Moralis to fetch latest data of USD price hourly and send alerts via email.',
-    imageUrl: '/images/placeholderimage.png',
-    projectUrl: 'https://github.com/mirzamudassir/hyperhire-price-tracker',
-    sourceUrl: 'https://github.com/mirzamudassir/hyperhire-price-tracker',
-    tags: ['Nest.js', 'Typescript', 'CoinMarketCap', 'Moralis'],
+      'Elevating Craftsmanship to an Art Form We craft high-performance instruments by blending form, function, and expert craftsmanship, using only the finest materials for our swords, knives, and precision tools. Hand Crafted in PAKISTAN.',
+    imageUrl: '/images/predatorcut.png',
+    projectUrl: 'https://predatorcut.pages.dev/',
+    sourceUrl: 'https://predatorcut.pages.dev/',
+    tags: ['Nest.js', 'Typescript', 'axios', 'Tailwind'],
   },
   {
     title: 'Payment Gateway Library',
     description:
-      'Payment gateway library with express.js that uses PayPal and Braintree to process transaction according to defined currency for each payment method.',
-    imageUrl: '/images/placeholderimage.png',
-    projectUrl: 'https://github.com/mirzamudassir/payment-gateway-lib',
-    sourceUrl: 'https://github.com/mirzamudassir/payment-gateway-lib',
-    tags: ['Express.js', 'PayPal', 'Braintree', 'HTML', 'CSS'],
+      `"StrangCoin" is a cryptocurrency token inspired by the hit TV series "Stranger Things." It leverages the show's fandom to create a digital asset with a humorous and community- driven ethos.However, investors should exercise caution due to its speculative nature and potential volatility.`,
+    imageUrl: '/images/strange.png',
+    projectUrl: 'https://strangecoin.pages.dev/',
+    sourceUrl: 'https://strangecoin.pages.dev/',
+    tags: ['JavaScript', 'HTML', 'CSS'],
   },
 ]
 

@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 export default function About() {
   return (
     <section id="about" className="pt-16">
-      <div className="mx-auto w-full max-w-4xl px-4 space-y-6">
+      <div className="mx-auto w-full max-w-4xl space-y-6">
 
         {/* Heading */}
         <motion.div

@@ -5,8 +5,8 @@ import { motion } from 'framer-motion'
 
 export default function Hero() {
   return (
-    <section id="hero" className="pt-16">
-      <div className="mx-auto w-full max-w-4xl px-4">
+    <section id="hero">
+      <div className="mx-auto w-full max-w-4xl">
         <div className="flex flex-col-reverse items-center gap-8 sm:flex-row sm:items-center sm:justify-between">
 
           {/* Text */}
