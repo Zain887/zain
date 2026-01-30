@@ -1,5 +1,4 @@
 // components/Contact.js
-
 export default function Contact() {
     return (
         <section id="contact" className="w-full py-12">
@@ -28,7 +27,7 @@ export default function Contact() {
                             >
                                 quick meeting
                             </a>{" "}
-                            and I'll respond as soon as I can!
+                            and I&apos;ll respond as soon as I can!
                         </p>
                     </div>
                 </div>
