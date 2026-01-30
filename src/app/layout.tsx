@@ -1,9 +1,6 @@
 import './globals.css'
 import { Metadata } from 'next'
 import { Jura } from 'next/font/google'
-import Sidebar from './components/Sidebar'
-import Contentarea from './components/Contentarea'
-import { ThemeProvider } from './context/ThemeContext'
 
 const jura = Jura({
   subsets: ['latin'],
@@ -18,14 +15,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${jura.className} w-full min-h-screen overflow-x-hidden`}  cz-shortcut-listen="true">
-        <ThemeProvider>
-          {/* Layout: Sidebar + Main Content */}
-          <div className="flex flex-col md:flex-row min-h-screen transition-colors duration-300">
-            <Sidebar />
-            <Contentarea>{children}</Contentarea>
-          </div>
-        </ThemeProvider>
+      <body className={`${jura.className} w-full min-h-screen overflow-x-hidden`} cz-shortcut-listen="true">
+        <div className="min-h-screen bg-background font-sans antialiased max-w-4xl mx-auto py-12 sm:py-24 px-6">
+          {children}
+        </div>
       </body>
     </html>
   )
