@@ -53,7 +53,7 @@ export default function Hero() {
           >
             <div className="relative h-28 w-28 overflow-hidden rounded-full sm:h-32 sm:w-32">
               <Image
-                src="/images/zainlogopic.png"
+                src="/images/logoPlaceholder.png"
                 alt="Muhammad Zain"
                 fill
                 className="object-cover"
